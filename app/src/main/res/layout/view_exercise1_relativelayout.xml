@@ -13,6 +13,7 @@
 
     <TextView
         android:id="@+id/text01"
+        android:paddingStart="5dp"
         tools:text="@tools:sample/date/ddmmyy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,6 +21,7 @@
 
     <TextView
         android:id="@+id/text02"
+        android:paddingStart="5dp"
         tools:text="@tools:sample/lorem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
 
     <TextView
         android:id="@+id/text03"
+        android:paddingStart="5dp"
         android:maxLines="5"
         tools:text="@tools:sample/lorem/random"
         android:layout_width="wrap_content"
