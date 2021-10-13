@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image00"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text04"
+        tools:text="Programas"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image00"/>
+
+    <TextView
+        android:id="@+id/text05"
+        tools:text="Peliculas"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text04"/>
+
+    <TextView
+        android:id="@+id/text06"
+        tools:text="Mi Vista"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text05"/>
+
+    <TextView
+        android:id="@+id/text01"
+        tools:text="Populares en Netlix"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image00"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text01"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text01"
+        android:layout_toEndOf="@id/image01"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text01"
+        android:layout_toEndOf="@id/image02"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text02"
+        tools:text="Tendencias"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image01"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text02"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text02"
+        android:layout_toEndOf="@id/image01"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text02"
+        android:layout_toEndOf="@id/image02"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text03"
+        tools:text="Verlo Nuevamente"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image04"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text03"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text03"
+        android:layout_toEndOf="@id/image01"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text03"
+        android:layout_toEndOf="@id/image02"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image11"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/image07"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image12"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/image07"
+        android:layout_toEndOf="@id/image11"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image13"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/image07"
+        android:layout_toEndOf="@id/image12"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image14"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/image07"
+        android:layout_toEndOf="@id/image13"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image15"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/image07"
+        android:layout_toEndOf="@id/image14"
+        tools:src="@tools:sample/avatars"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/text07"
+        tools:text="Verlo Nuevamente"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image04"/>
+
+
+
+
+
+</RelativeLayout>
