@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">10sp</dimen>
+
+    <dimen name="SpaceVertical">
+        <item name="space_vertical">10dp</item>
+    </dimen>
+
+    <dimen name="DoubleSpaceVertical">
+        <item name="space_vertical">20dp</item>
+    </dimen>
+</resources>

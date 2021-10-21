@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/bloque01"
+        android:background="@color/grey"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image01"
+            style="@style/AvatarViewBig"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image01"
+            tools:text="SOUL KITCHEN" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image01"
+            android:layout_below="@id/text01"
+            tools:text="Cocina Moderna / Hamburgueseria" />
+
+        <RelativeLayout
+            android:id="@+id/bloque02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image01"
+            android:layout_below="@id/text02">
+
+            <TextView
+                android:paddingStart="5dp"
+                android:id="@+id/text03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3.89" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageStars"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@id/text03"
+                android:padding="5dp"
+                android:src="@drawable/estrellas" />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:id="@+id/text04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageStars"
+                tools:text="(305)" />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:id="@+id/text05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/text04"
+                tools:text="€€" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image02"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/bloque02"
+            android:layout_toEndOf="@id/image01"
+            android:padding="5dp"
+            android:src="@drawable/ubereats" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image03"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/bloque02"
+            android:layout_toEndOf="@id/image02"
+            android:padding="5dp"
+            android:src="@drawable/deliveroo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image04"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/bloque02"
+            android:layout_toEndOf="@id/image03"
+            android:padding="5dp"
+            android:src="@drawable/glovo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image05"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/bloque02"
+            android:layout_toEndOf="@id/image04"
+            android:padding="5dp"
+            android:src="@drawable/justeat" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloque02"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/text06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                tools:text="50%" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image06"
+                android:layout_toEndOf="@id/text06"
+                style="@style/Icon"
+                android:src="@drawable/etiqueta" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
