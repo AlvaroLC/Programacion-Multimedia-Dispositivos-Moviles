@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:src="@drawable/rayitas" />
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image01"
+            android:layout_centerInParent="true"
+            tools:text="DELIVERUM" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloqueEncabezado"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/navBar"
+        android:background="@drawable/hamburguesa3"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            tools:text="SOUL KITCHEN | ÁVILA" />
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text02"
+            android:textSize="14sp"
+            tools:text="Cocina Moderna | Hamburgueseria" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image02"
+            style="@style/Icon"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text03"
+            android:src="@drawable/estrella2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image03"
+            style="@style/Icon"
+            android:layout_below="@+id/text03"
+            android:layout_toEndOf="@+id/image02"
+            android:src="@drawable/corazon1" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bloqueOpciones"
+        android:layout_below="@id/bloqueEncabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:paddingStart="20dp"
+            android:id="@+id/text04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="14sp"
+            tools:text="CARTA" />
+
+        <TextView
+            android:paddingStart="30dp"
+            android:id="@+id/text05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text04"
+            android:textSize="14sp"
+            tools:text="INFO" />
+
+        <TextView
+            android:paddingStart="30dp"
+            android:id="@+id/text06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text05"
+            android:textSize="14sp"
+            tools:text="FOTOS" />
+
+        <TextView
+            android:paddingEnd="20dp"
+            android:id="@+id/text07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            tools:text="OPINIONES (405)" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
