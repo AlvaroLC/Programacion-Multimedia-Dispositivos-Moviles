@@ -8,5 +8,7 @@ Implementación de las vistas de la actividad propuesta en clase
 <!-- Please, describe in detail how you tested your changes -->
 
 ## Design UI
+<!--  -->
 
 ## Screenshots or Video
+<!--  -->
