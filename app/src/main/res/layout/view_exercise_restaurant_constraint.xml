@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/image01"
+        style="@style/AvatarViewBig"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text01"
+        app:layout_constraintLeft_toRightOf="@id/image01"
+        app:layout_constraintTop_toTopOf="@id/image01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        tools:text="SOUL KITCHEN" />
+
+    <TextView
+        android:id="@+id/text02"
+        app:layout_constraintLeft_toRightOf="@id/image01"
+        app:layout_constraintTop_toBottomOf="@id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        tools:text="Cocina Moderna | Hamburgueseria" />
+
+    <TextView
+        android:id="@+id/text03"
+        app:layout_constraintLeft_toRightOf="@id/image01"
+        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        tools:text="3.89" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageStars"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toRightOf="@id/text03"
+        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:padding="5dp"
+        android:src="@drawable/estrellas" />
+
+    <TextView
+        android:id="@+id/text04"
+        app:layout_constraintLeft_toRightOf="@id/imageStars"
+        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        tools:text="(305)" />
+
+    <TextView
+        android:id="@+id/text05"
+        app:layout_constraintLeft_toRightOf="@id/text04"
+        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        tools:text="€€" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image02"
+        style="@style/AvatarViewIcon"
+        app:layout_constraintLeft_toRightOf="@id/image01"
+        app:layout_constraintTop_toBottomOf="@id/text03"
+        android:padding="5dp"
+        android:src="@drawable/ubereats" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image03"
+        style="@style/AvatarViewIcon"
+        app:layout_constraintLeft_toRightOf="@id/image02"
+        app:layout_constraintTop_toBottomOf="@id/text03"
+        android:padding="5dp"
+        android:src="@drawable/deliveroo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image04"
+        style="@style/AvatarViewIcon"
+        app:layout_constraintLeft_toRightOf="@id/image03"
+        app:layout_constraintTop_toBottomOf="@id/text03"
+        android:padding="5dp"
+        android:src="@drawable/glovo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image05"
+        style="@style/AvatarViewIcon"
+        app:layout_constraintLeft_toRightOf="@id/image04"
+        app:layout_constraintTop_toBottomOf="@id/text03"
+        android:padding="5dp"
+        android:src="@drawable/justeat" />
+
+    <TextView
+        android:id="@+id/text06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/image04"
+        app:layout_constraintTop_toBottomOf="@id/text03"
+        tools:text="50%" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image06"
+        app:layout_constraintRight_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="text04"
+        style="@style/Icon"
+        android:src="@drawable/etiqueta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
