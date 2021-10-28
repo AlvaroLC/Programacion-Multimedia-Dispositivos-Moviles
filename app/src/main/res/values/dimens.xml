@@ -41,4 +41,8 @@
     <dimen name="optionPaddingEnd">
         <item name="paddingStart">20dp</item>
     </dimen>
+
+    <dimen name="padingRestaurant1">
+        <item name="padding">10dp</item>
+    </dimen>
 </resources>

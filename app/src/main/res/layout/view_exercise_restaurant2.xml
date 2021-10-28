@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/navBarApplication"
@@ -22,8 +22,8 @@
             android:id="@+id/text_title_application"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/image_button_menu"
             android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/image_button_menu"
             tools:text="DELIVERUM" />
     </RelativeLayout>
 
@@ -37,24 +37,24 @@
 
         <TextView
             android:id="@+id/text_title_restaurant"
+            style="@style/TitleViewRestaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TitleViewRestaurant"
             tools:text="SOUL KITCHEN | ÁVILA" />
 
         <TextView
             android:id="@+id/text_type_restaurant"
+            style="@style/typeRestaurantView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_title_restaurant"
-            style="@style/typeRestaurantView"
             tools:text="Cocina Moderna | Hamburgueseria" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_rating_view"
             style="@style/Icon"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/text_type_restaurant"
+            android:layout_alignParentStart="true"
             android:src="@drawable/estrella2" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -65,47 +65,48 @@
             android:src="@drawable/corazon1" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/options_view_group"
-        android:layout_below="@id/header_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/header_view"
         android:padding="@dimen/optionsPadding">
 
         <TextView
-            android:paddingStart="@dimen/optionPaddingStart"
             android:id="@+id/text_option_carta"
+            style="@style/optionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            style="@style/optionStyle"
+            android:paddingStart="@dimen/optionPaddingStart"
             tools:text="CARTA" />
 
         <TextView
-            android:paddingStart="@dimen/optionPaddingStart"
             android:id="@+id/text_option_info"
+            style="@style/optionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/text_option_carta"
-            style="@style/optionStyle"
+            android:paddingStart="@dimen/optionPaddingStart"
             tools:text="INFO" />
 
         <TextView
-            android:paddingStart="@dimen/optionPaddingStart"
             android:id="@+id/text_option_fotos"
+            style="@style/optionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/text_option_info"
-            style="@style/optionStyle"
+            android:paddingStart="@dimen/optionPaddingStart"
             tools:text="FOTOS" />
 
         <TextView
-            android:paddingEnd="@dimen/optionPaddingEnd"
             android:id="@+id/text_option_opinions"
+            style="@style/optionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            style="@style/optionStyle"
+            android:paddingEnd="@dimen/optionPaddingEnd"
             tools:text="OPINIONES (405)" />
     </RelativeLayout>
 

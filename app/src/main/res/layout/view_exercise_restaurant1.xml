@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:padding="10dp">
+        android:padding="@dimen/padingRestaurant1">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_icon_soul_kitchen"
@@ -53,7 +53,7 @@
                 android:layout_width="70dp"
                 android:layout_height="20dp"
                 android:layout_toEndOf="@id/text_rating_number"
-                android:padding="5dp"
+                android:padding="@dimen/PaddingIcons"
                 android:src="@drawable/estrellas" />
 
             <TextView
