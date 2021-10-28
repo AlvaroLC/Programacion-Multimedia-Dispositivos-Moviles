@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="10dp">
 
     <RelativeLayout
-        android:id="@+id/bloque01"
-        android:background="@color/grey"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
         android:padding="10dp">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image01"
+            android:id="@+id/image_icon_soul_kitchen"
             style="@style/AvatarViewBig"
             android:layout_alignParentStart="true"
             android:src="@drawable/ic_launcher" />
 
         <TextView
-            android:id="@+id/text01"
+            android:id="@+id/text_title_restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/image01"
-            android:paddingStart="5dp"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:paddingStart="@dimen/PaddingStart"
             tools:text="SOUL KITCHEN" />
 
         <TextView
-            android:paddingStart="5dp"
-            android:id="@+id/text02"
+            android:id="@+id/text_type_restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/image01"
-            android:layout_below="@id/text01"
+            android:layout_below="@id/text_title_restaurant"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:paddingStart="@dimen/PaddingStart"
             tools:text="Cocina Moderna / Hamburgueseria" />
 
         <RelativeLayout
-            android:id="@+id/bloque02"
+            android:id="@+id/rating_options_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/image01"
-            android:layout_below="@id/text02">
+            android:layout_below="@id/text_type_restaurant"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen">
 
             <TextView
-                android:paddingStart="5dp"
-                android:id="@+id/text03"
+                android:id="@+id/text_rating_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/PaddingStart"
                 tools:text="3.89" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageStars"
+                android:id="@+id/image_rating"
                 android:layout_width="70dp"
                 android:layout_height="20dp"
-                android:layout_toEndOf="@id/text03"
+                android:layout_toEndOf="@id/text_rating_number"
                 android:padding="5dp"
                 android:src="@drawable/estrellas" />
 
             <TextView
-                android:paddingStart="5dp"
-                android:id="@+id/text04"
+                android:id="@+id/text_view_opinions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/imageStars"
+                android:layout_toEndOf="@id/image_rating"
+                android:paddingStart="@dimen/PaddingStart"
                 tools:text="(305)" />
 
+            <!-- Moneda disponible -->
             <TextView
-                android:paddingStart="5dp"
-                android:id="@+id/text05"
+                android:id="@+id/text_available_currency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/text04"
+                android:layout_toEndOf="@id/text_view_opinions"
+                android:paddingStart="@dimen/PaddingStart"
                 tools:text="€€" />
         </RelativeLayout>
 
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image02"
+            android:id="@+id/imageIconUberEats"
             style="@style/AvatarViewIcon"
-            android:layout_below="@id/bloque02"
-            android:layout_toEndOf="@id/image01"
-            android:padding="5dp"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:padding="@dimen/PaddingIcons"
             android:src="@drawable/ubereats" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image03"
+            android:id="@+id/imageIconDeliveroo"
             style="@style/AvatarViewIcon"
-            android:layout_below="@id/bloque02"
-            android:layout_toEndOf="@id/image02"
-            android:padding="5dp"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/imageIconUberEats"
+            android:padding="@dimen/PaddingIcons"
             android:src="@drawable/deliveroo" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image04"
+            android:id="@+id/imageIconGlovo"
             style="@style/AvatarViewIcon"
-            android:layout_below="@id/bloque02"
-            android:layout_toEndOf="@id/image03"
-            android:padding="5dp"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/imageIconDeliveroo"
+            android:padding="@dimen/PaddingIcons"
             android:src="@drawable/glovo" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image05"
+            android:id="@+id/imageIconJustEat"
             style="@style/AvatarViewIcon"
-            android:layout_below="@id/bloque02"
-            android:layout_toEndOf="@id/image04"
-            android:padding="5dp"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/imageIconGlovo"
+            android:padding="@dimen/PaddingIcons"
             android:src="@drawable/justeat" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bloque02"
+            android:layout_below="@id/rating_options_view"
             android:layout_alignParentEnd="true">
 
             <TextView
-                android:id="@+id/text06"
+                android:id="@+id/text_discount_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -122,9 +122,9 @@
                 tools:text="50%" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image06"
-                android:layout_toEndOf="@id/text06"
+                android:id="@+id/image_discount_tag"
                 style="@style/Icon"
+                android:layout_toEndOf="@id/text_discount_number"
                 android:src="@drawable/etiqueta" />
 
 

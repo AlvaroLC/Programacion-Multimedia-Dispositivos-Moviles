@@ -9,4 +9,36 @@
     <dimen name="DoubleSpaceVertical">
         <item name="space_vertical">20dp</item>
     </dimen>
+
+    <dimen name="PaddingStart">
+        <item name="paddingStart">5dp</item>
+    </dimen>
+
+    <dimen name="PaddingIcons">
+        <item name="padding">5dp</item>
+    </dimen>
+
+    <dimen name="NavBarHeight">
+        <item name="layout_height">40dp</item>
+    </dimen>
+
+    <dimen name="HeaderHeight">
+        <item name="layout_height">140dp</item>
+    </dimen>
+
+    <dimen name="HeaderPadding">
+        <item name="padding">15dp</item>
+    </dimen>
+
+    <dimen name="optionsPadding">
+        <item name="padding">15dp</item>
+    </dimen>
+
+    <dimen name="optionPaddingStart">
+        <item name="paddingStart">28dp</item>
+    </dimen>
+
+    <dimen name="optionPaddingEnd">
+        <item name="paddingStart">20dp</item>
+    </dimen>
 </resources>

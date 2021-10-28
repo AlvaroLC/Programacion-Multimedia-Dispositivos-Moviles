@@ -5,108 +5,107 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
-        android:id="@+id/navBar"
+        android:id="@+id/navBarApplication"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/NavBarHeight"
         android:layout_alignParentTop="true">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image01"
+            android:id="@+id/image_button_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:padding="5dp"
+            android:padding="@dimen/PaddingIcons"
             android:src="@drawable/rayitas" />
 
         <TextView
-            android:id="@+id/text01"
+            android:id="@+id/text_title_application"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/image01"
+            android:layout_toEndOf="@id/image_button_menu"
             android:layout_centerInParent="true"
             tools:text="DELIVERUM" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/bloqueEncabezado"
+        android:id="@+id/header_view"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_below="@id/navBar"
+        android:layout_height="@dimen/HeaderHeight"
+        android:layout_below="@id/navBarApplication"
         android:background="@drawable/hamburguesa3"
-        android:padding="15dp">
+        android:padding="@dimen/HeaderPadding">
 
         <TextView
-            android:id="@+id/text02"
+            android:id="@+id/text_title_restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:textSize="25sp"
+            style="@style/TitleViewRestaurant"
             tools:text="SOUL KITCHEN | ÁVILA" />
 
         <TextView
-            android:id="@+id/text03"
+            android:id="@+id/text_type_restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text02"
-            android:textSize="14sp"
+            android:layout_below="@+id/text_title_restaurant"
+            style="@style/typeRestaurantView"
             tools:text="Cocina Moderna | Hamburgueseria" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image02"
+            android:id="@+id/image_rating_view"
             style="@style/Icon"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/text03"
+            android:layout_below="@+id/text_type_restaurant"
             android:src="@drawable/estrella2" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image03"
+            android:id="@+id/image_like_view"
             style="@style/Icon"
-            android:layout_below="@+id/text03"
-            android:layout_toEndOf="@+id/image02"
+            android:layout_below="@+id/text_type_restaurant"
+            android:layout_toEndOf="@+id/image_rating_view"
             android:src="@drawable/corazon1" />
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/bloqueOpciones"
-        android:layout_below="@id/bloqueEncabezado"
+        android:id="@+id/options_view_group"
+        android:layout_below="@id/header_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:padding="@dimen/optionsPadding">
 
         <TextView
-            android:paddingStart="20dp"
-            android:id="@+id/text04"
+            android:paddingStart="@dimen/optionPaddingStart"
+            android:id="@+id/text_option_carta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:textSize="14sp"
+            style="@style/optionStyle"
             tools:text="CARTA" />
 
         <TextView
-            android:paddingStart="30dp"
-            android:id="@+id/text05"
+            android:paddingStart="@dimen/optionPaddingStart"
+            android:id="@+id/text_option_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/text04"
-            android:textSize="14sp"
+            android:layout_toEndOf="@id/text_option_carta"
+            style="@style/optionStyle"
             tools:text="INFO" />
 
         <TextView
-            android:paddingStart="30dp"
-            android:id="@+id/text06"
+            android:paddingStart="@dimen/optionPaddingStart"
+            android:id="@+id/text_option_fotos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/text05"
-            android:textSize="14sp"
+            android:layout_toEndOf="@id/text_option_info"
+            style="@style/optionStyle"
             tools:text="FOTOS" />
 
         <TextView
-            android:paddingEnd="20dp"
-            android:id="@+id/text07"
+            android:paddingEnd="@dimen/optionPaddingEnd"
+            android:id="@+id/text_option_opinions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textSize="14sp"
+            style="@style/optionStyle"
             tools:text="OPINIONES (405)" />
     </RelativeLayout>
 
