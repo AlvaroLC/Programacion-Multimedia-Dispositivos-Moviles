@@ -3,114 +3,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
+    android:padding="@dimen/padingRestaurant1"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/background_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/image_icon_soul_kitchen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/PaddingStart"
+        android:background="@color/grey"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/image01"
+        android:id="@+id/image_icon_soul_kitchen"
         style="@style/AvatarViewBig"
         android:src="@drawable/ic_launcher" />
 
     <TextView
-        android:id="@+id/text01"
-        app:layout_constraintLeft_toRightOf="@id/image01"
-        app:layout_constraintTop_toTopOf="@id/image01"
+        android:id="@+id/text_title_restaurant"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_soul_kitchen"
+        app:layout_constraintTop_toTopOf="@id/image_icon_soul_kitchen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="5dp"
+        android:paddingStart="@dimen/PaddingStart"
         tools:text="SOUL KITCHEN" />
 
     <TextView
-        android:id="@+id/text02"
-        app:layout_constraintLeft_toRightOf="@id/image01"
-        app:layout_constraintTop_toBottomOf="@id/text01"
+        android:id="@+id/text_type_restaurant"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_soul_kitchen"
+        app:layout_constraintTop_toBottomOf="@id/text_title_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="5dp"
+        android:paddingStart="@dimen/PaddingStart"
         tools:text="Cocina Moderna | Hamburgueseria" />
 
     <TextView
-        android:id="@+id/text03"
-        app:layout_constraintLeft_toRightOf="@id/image01"
-        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:id="@+id/text_rating_number"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_soul_kitchen"
+        app:layout_constraintTop_toBottomOf="@id/text_type_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="5dp"
+        android:paddingStart="@dimen/PaddingStart"
         tools:text="3.89" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageStars"
+        android:id="@+id/image_rating"
         android:layout_width="70dp"
         android:layout_height="20dp"
-        app:layout_constraintLeft_toRightOf="@id/text03"
-        app:layout_constraintTop_toBottomOf="@id/text02"
-        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/text_rating_number"
+        app:layout_constraintTop_toBottomOf="@id/text_type_restaurant"
+        android:padding="@dimen/PaddingIcons"
         android:src="@drawable/estrellas" />
 
     <TextView
-        android:id="@+id/text04"
-        app:layout_constraintLeft_toRightOf="@id/imageStars"
-        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:id="@+id/text_view_opinions"
+        app:layout_constraintLeft_toRightOf="@id/image_rating"
+        app:layout_constraintTop_toBottomOf="@id/text_type_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="5dp"
+        android:paddingStart="@dimen/PaddingStart"
         tools:text="(305)" />
 
     <TextView
-        android:id="@+id/text05"
-        app:layout_constraintLeft_toRightOf="@id/text04"
-        app:layout_constraintTop_toBottomOf="@id/text02"
+        android:id="@+id/text_available_currency"
+        app:layout_constraintLeft_toRightOf="@id/text_view_opinions"
+        app:layout_constraintTop_toBottomOf="@id/text_type_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="5dp"
+        android:paddingStart="@dimen/PaddingStart"
         tools:text="€€" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image02"
+        android:id="@+id/image_icon_uber_eats"
         style="@style/AvatarViewIcon"
-        app:layout_constraintLeft_toRightOf="@id/image01"
-        app:layout_constraintTop_toBottomOf="@id/text03"
-        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_soul_kitchen"
+        app:layout_constraintTop_toBottomOf="@id/text_rating_number"
+        android:padding="@dimen/PaddingIcons"
         android:src="@drawable/ubereats" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image03"
+        android:id="@+id/image_icon_deliveroo"
         style="@style/AvatarViewIcon"
-        app:layout_constraintLeft_toRightOf="@id/image02"
-        app:layout_constraintTop_toBottomOf="@id/text03"
-        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_uber_eats"
+        app:layout_constraintTop_toBottomOf="@id/text_rating_number"
+        android:padding="@dimen/PaddingIcons"
         android:src="@drawable/deliveroo" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image04"
+        android:id="@+id/image_icon_glovo"
         style="@style/AvatarViewIcon"
-        app:layout_constraintLeft_toRightOf="@id/image03"
-        app:layout_constraintTop_toBottomOf="@id/text03"
-        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_deliveroo"
+        app:layout_constraintTop_toBottomOf="@id/text_rating_number"
+        android:padding="@dimen/PaddingIcons"
         android:src="@drawable/glovo" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image05"
+        android:id="@+id/image_icon_just_eat"
         style="@style/AvatarViewIcon"
-        app:layout_constraintLeft_toRightOf="@id/image04"
-        app:layout_constraintTop_toBottomOf="@id/text03"
-        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/image_icon_glovo"
+        app:layout_constraintTop_toBottomOf="@id/text_rating_number"
+        android:padding="@dimen/PaddingIcons"
         android:src="@drawable/justeat" />
 
-    <TextView
-        android:id="@+id/text06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/image04"
-        app:layout_constraintTop_toBottomOf="@id/text03"
-        tools:text="50%" />
-
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image06"
-        app:layout_constraintRight_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="text04"
+        android:id="@+id/image_discount_tag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_available_currency"
         style="@style/Icon"
         android:src="@drawable/etiqueta" />
+
+    <TextView
+        android:id="@+id/text_discount_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/image_discount_tag"
+        app:layout_constraintTop_toBottomOf="@id/text_rating_number"
+        tools:text="50%" />
 </androidx.constraintlayout.widget.ConstraintLayout>
