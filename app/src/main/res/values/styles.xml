@@ -34,16 +34,16 @@
         <item name="android:layout_height">25dp</item>
     </style>
 
-    <style name="TitleViewRestaurant">
+    <style name="TitleStyleRestaurant">
         <item name="android:textSize">25sp</item>
         <item name="android:paddingTop">15dp</item>
     </style>
 
-    <style name="typeRestaurantView">
+    <style name="TypeStyleRestaurant">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="optionStyle">
+    <style name="OptionStyle">
         <item name="android:textSize">14sp</item>
     </style>
 

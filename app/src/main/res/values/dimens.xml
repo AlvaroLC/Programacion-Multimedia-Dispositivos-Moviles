@@ -2,47 +2,23 @@
 <resources>
     <dimen name="text_size_title">10sp</dimen>
 
-    <dimen name="SpaceVertical">
-        <item name="space_vertical">10dp</item>
-    </dimen>
+    <dimen name="space_start">5dp</dimen>
 
-    <dimen name="DoubleSpaceVertical">
-        <item name="space_vertical">20dp</item>
-    </dimen>
+    <dimen name="space_start_rating_bar">2dp</dimen>
 
-    <dimen name="PaddingStart">
-        <item name="paddingStart">5dp</item>
-    </dimen>
+    <dimen name="space_icons">5dp</dimen>
 
-    <dimen name="PaddingIcons">
-        <item name="padding">5dp</item>
-    </dimen>
+    <dimen name="nav_bar_height">40dp</dimen>
 
-    <dimen name="NavBarHeight">
-        <item name="layout_height">40dp</item>
-    </dimen>
+    <dimen name="header_height">140dp</dimen>
 
-    <dimen name="HeaderHeight">
-        <item name="layout_height">140dp</item>
-    </dimen>
+    <dimen name="header_padding">15dp</dimen>
 
-    <dimen name="HeaderPadding">
-        <item name="padding">15dp</item>
-    </dimen>
+    <dimen name="options_padding">15dp</dimen>
 
-    <dimen name="optionsPadding">
-        <item name="padding">15dp</item>
-    </dimen>
+    <dimen name="option_padding_start">28dp</dimen>
 
-    <dimen name="optionPaddingStart">
-        <item name="paddingStart">28dp</item>
-    </dimen>
+    <dimen name="option_padding_end">20dp</dimen>
 
-    <dimen name="optionPaddingEnd">
-        <item name="paddingStart">20dp</item>
-    </dimen>
-
-    <dimen name="padingRestaurant1">
-        <item name="padding">10dp</item>
-    </dimen>
+    <dimen name="space_horizontal">10dp</dimen>
 </resources>
