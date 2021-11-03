@@ -15,7 +15,7 @@
             android:id="@+id/image_icon_soul_kitchen"
             style="@style/AvatarViewBig"
             android:layout_alignParentStart="true"
-            android:src="@drawable/ic_launcher" />
+            tools:src="@drawable/ic_launcher" />
 
         <TextView
             android:id="@+id/text_title_restaurant"
@@ -85,7 +85,7 @@
             android:layout_below="@id/rating_options_view"
             android:layout_toEndOf="@id/image_icon_soul_kitchen"
             android:padding="@dimen/space_icons"
-            android:src="@drawable/ubereats" />
+            tools:src="@drawable/ubereats" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_icon_deliveroo"
@@ -93,7 +93,7 @@
             android:layout_below="@id/rating_options_view"
             android:layout_toEndOf="@id/image_icon_uber_eats"
             android:padding="@dimen/space_icons"
-            android:src="@drawable/deliveroo" />
+            tools:src="@drawable/deliveroo" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_icon_glovo"
@@ -101,7 +101,7 @@
             android:layout_below="@id/rating_options_view"
             android:layout_toEndOf="@id/image_icon_deliveroo"
             android:padding="@dimen/space_icons"
-            android:src="@drawable/glovo" />
+            tools:src="@drawable/glovo" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_icon_just_eat"
@@ -109,7 +109,7 @@
             android:layout_below="@id/rating_options_view"
             android:layout_toEndOf="@id/image_icon_glovo"
             android:padding="@dimen/space_icons"
-            android:src="@drawable/justeat" />
+            tools:src="@drawable/justeat" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
                 android:id="@+id/image_discount_tag"
                 style="@style/Icon"
                 android:layout_toEndOf="@id/text_discount_number"
-                android:src="@drawable/etiqueta" />
+                tools:src="@drawable/etiqueta" />
 
 
         </RelativeLayout>

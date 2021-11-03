@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut3.presentation.UiActivity">
-
-    <include layout="@layout/view_exercise_restaurant1" />
+    tools:context=".Mvvm.presentation.MvvmActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
