@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ut3.exercise_plagricola.presentation.AlertActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/text_title_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TITULO DE LA NOTICIA" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
