@@ -7,14 +7,37 @@
     tools:context=".ut3.exercise_plagricola.presentation.AlertActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:padding="20dp"
+        android:id="@+id/image_icon_alert"
+        android:src="@drawable/icon_info"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:paddingTop="10dp"
         android:id="@+id/text_title_notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="TITULO DE LA NOTICIA" />
+
+    <TextView
+        android:id="@+id/date_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_notice"
+        tools:text="fecha de la noticia" />
+
+    <TextView
+        android:id="@+id/summary_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+        app:layout_constraintTop_toBottomOf="@+id/date_notice"
+        tools:text="CUERPO DE LA NOTICIA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
