@@ -2,6 +2,7 @@ package com.alvarolc.pmpd_playground.ut3.exercise_plagricola.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.TextView
 import com.alvarolc.pmpd_playground.R
 import com.alvarolc.pmpd_playground.databinding.ActivityAlertBinding
@@ -19,11 +20,20 @@ class AlertActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alert)
+        setupBinding()
         render()
     }
 
+    private fun setupBinding(){
+        val layoutInFlater = LayoutInflater.from(this)
+        viewBinding = ActivityAlertBinding.inflate(layoutInFlater)
+        setContentView(viewBinding.root)
+    }
+
     private fun render(){
-        val alertModel = alertViewModel.getAlertAll()
-        viewBinding.textTitleNotice.text = alertModel
+        val alertModel = alertViewModel.getAlertModel().first()
+        viewBinding.textTitleNotice.text = alertModel.title
+        viewBinding.dateNotice.text = alertModel.datePublished
+        viewBinding.summaryNotice.text = alertModel.summary
     }
 }

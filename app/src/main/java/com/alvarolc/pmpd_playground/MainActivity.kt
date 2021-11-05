@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("@dev","onCreate")
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_alert)
 
         //val imageLion : AppCompatImageView = findViewById(R.id.ic_image_lion)
         //imageLion.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_image_lion))

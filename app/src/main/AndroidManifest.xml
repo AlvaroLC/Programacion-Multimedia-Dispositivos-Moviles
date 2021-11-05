@@ -11,22 +11,18 @@
         android:theme="@style/Theme.PMPDPlayGround">
         <activity
             android:name=".ut3.exercise_plagricola.presentation.AlertActivity"
-            android:exported="true" />
-        <activity
-            android:name=".UT2.UiActivity2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity
-            android:name=".ut3.UiActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
     </application>
 
 </manifest>

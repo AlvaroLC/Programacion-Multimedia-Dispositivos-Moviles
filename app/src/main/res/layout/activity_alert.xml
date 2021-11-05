@@ -7,16 +7,15 @@
     tools:context=".ut3.exercise_plagricola.presentation.AlertActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:padding="10dp"
+        android:padding="@dimen/space_vertical"
         android:id="@+id/image_icon_alert"
         android:src="@drawable/icon_info"
-        android:layout_height="40dp"
-        android:layout_width="40dp"
+        style="@style/IconSize"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:paddingTop="10dp"
+        android:paddingTop="@dimen/space_vertical"
         android:id="@+id/text_title_notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
