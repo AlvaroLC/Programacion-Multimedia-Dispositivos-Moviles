@@ -2,6 +2,8 @@ package com.alvarolc.pmpd_playground.ut3.exercise_plagricola.app
 
 import com.alvarolc.pmpd_playground.ut3.exercise_plagricola.domain.AlertModel
 import com.alvarolc.pmpd_playground.ut3.exercise_plagricola.domain.FileModel
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MockApiClient : ApiClient {
 
@@ -14,4 +16,42 @@ class MockApiClient : ApiClient {
             AlertModel("5", "Titulo 5", 5, "Resumen alerta 5", "2021-01-14", "Cuerpo5", "", mutableListOf(FileModel("name 05", "url 05"))),
             AlertModel("6", "Titulo 6", 6, "Resumen alerta 6", "2021-01-15", "Cuerpo6", "", mutableListOf(FileModel("name 06", "url 06"))),
         )
+}
+
+class RetrofitApiClient : ApiClient {
+
+    private val urlEndPoint: String = "https://plagricola.sitehub.es/api/public/alerts/"
+    private var apiEndPoint: ApiEndPoint
+
+    init {
+        apiEndPoint = buildApiService()
+    }
+
+    /**
+     * Creación del cliente con el Endpoint.
+     * Definido por la librería Retrofit. Siempre es así.
+     */
+    private fun buildApiService(): ApiEndPoint {
+        return buildClient().create(ApiEndPoint::class.java)
+    }
+
+    private fun buildClient(): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl(urlEndPoint)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
+
+
+    override fun getAlerts(): List<AlertModel> {
+        val call = apiEndPoint.getAlerts()
+        val response = call.execute()
+        if(response.isSuccessful){
+            val alerts = response.body()
+            return alerts ?: mutableListOf()
+        } else {
+            return mutableListOf()
+        }
+    }
+
 }
