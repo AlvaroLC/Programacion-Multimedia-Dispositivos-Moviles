@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AvatarViewBig">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">85dp</item>
+    </style>
+
+    <style name="AvatarViewSmall">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="AvatarViewIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="TitleView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SubTitleView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="IconName">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="TitleStyleRestaurant">
+        <item name="android:textSize">25sp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="TypeStyleRestaurant">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="OptionStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
