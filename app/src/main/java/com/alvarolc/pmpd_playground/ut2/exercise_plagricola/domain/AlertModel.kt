@@ -1,4 +1,4 @@
-package com.alvarolc.pmpd_playground.ut3.exercise_plagricola.domain
+package com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain
 
 data class AlertModel(
     val id: String,
@@ -9,4 +9,6 @@ data class AlertModel(
     val body: String,
     val source: String,
     val files: List<FileModel>
-    )
+)
+
+data class FileModel(val name: String, val url: String)

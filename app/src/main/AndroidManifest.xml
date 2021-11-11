@@ -12,19 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
         <activity
-            android:name=".ut3.exercise_plagricola.presentation.AlertActivity"
-            android:exported="true" >
+            android:name=".ut2.ut02_ex02.presentation.Ut02Ex02Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ut2.exercise_plagricola.presentation.AlertActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
