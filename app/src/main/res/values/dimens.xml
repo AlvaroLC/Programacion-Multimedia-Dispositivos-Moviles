@@ -2,4 +2,5 @@
 <resources>
     <dimen name="space_vertical">8dp</dimen>
     <dimen name="space_horizontal">10dp</dimen>
+    <dimen name="width_text">300dp</dimen>
 </resources>

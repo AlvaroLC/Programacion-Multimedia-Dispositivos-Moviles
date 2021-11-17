@@ -25,13 +25,12 @@
         <TextView
             style="@style/titleStyle"
             android:id="@+id/text_title_notice"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_text"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/space_vertical"
             android:paddingLeft="@dimen/space_vertical"
             app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginRight="@dimen/space_vertical"
             tools:text="TITULO DE LA NOTICIA" />
 
         <TextView
@@ -39,22 +38,20 @@
             android:paddingTop="@dimen/space_horizontal"
             android:paddingBottom="@dimen/space_horizontal"
             android:id="@+id/date_notice"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_text"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
             app:layout_constraintTop_toBottomOf="@+id/text_title_notice"
-            android:layout_marginRight="@dimen/space_vertical"
             tools:text="fecha de la noticia" />
 
         <TextView
             android:paddingLeft="@dimen/space_vertical"
             android:paddingBottom="@dimen/space_vertical"
             android:id="@+id/summary_notice"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_text"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
             app:layout_constraintTop_toBottomOf="@+id/date_notice"
-            android:layout_marginRight="@dimen/space_vertical"
             tools:text="CUERPO DE LA NOTICIA" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
