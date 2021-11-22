@@ -2,8 +2,10 @@ package com.alvarolc.pmpd_playground.ut2.exercise_plagricola.presentation
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.util.Log
 import androidx.core.text.HtmlCompat
 import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
@@ -42,8 +44,12 @@ class AlertDetailsActivity : AppCompatActivity() {
             alert?.let {
                 runOnUiThread {
                     bind.textTitleNotice.text = it.title
-                    bind.col1row1.text = alert.files[0].name
-                    bind.body.text = HtmlCompat.fromHtml(alert.body, FROM_HTML_MODE_LEGACY)
+                    bind.fileTitle.text = alert.files[0].name
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+                        bind.body.setText(Html.fromHtml(alert.body, Html.FROM_HTML_MODE_COMPACT))
+                    }else{
+                        null
+                    }
                 }
             }
 

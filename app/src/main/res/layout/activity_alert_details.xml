@@ -66,31 +66,41 @@
             android:id="@+id/list_files"
             app:layout_constraintTop_toBottomOf="@+id/line_separator"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            tools:ignore="MissingConstraints">
+            android:layout_height="match_parent"
+            android:stretchColumns="2">
 
             <TableRow>
+
                 <TextView
-                    android:id="@+id/col1row1"
-                    android:layout_height="30dp"
-                    tools:text="@string/table_col1" />
-                <TextView
-                    android:id="@+id/col1row2"
-                    android:layout_height="30dp"
-                    tools:text="@string/table_col1" />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:id="@+id/col2row1"
-                    android:layout_height="30dp"
-                    tools:text="@string/table_col1" />
-                <TextView
-                    android:id="@+id/col2row2"
-                    android:layout_height="30dp"
-                    tools:text="@string/table_col1" />
+                    android:id="@+id/file_title"
+                    android:padding="@dimen/padding_top"
+                    tools:text="file1" />
+
+                <ImageView
+                    android:id="@+id/first_icon_pdf"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/pdf_file_icon" />
+
             </TableRow>
 
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/file_title2"
+                    android:padding="@dimen/padding_top"
+                    tools:text="Recomendaciones del manejo. Periodo estival \n 2021" />
+
+                <ImageView
+                    android:id="@+id/secon_icon_pdf"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/pdf_file_icon" />
+            </TableRow>
         </TableLayout>
 
 
