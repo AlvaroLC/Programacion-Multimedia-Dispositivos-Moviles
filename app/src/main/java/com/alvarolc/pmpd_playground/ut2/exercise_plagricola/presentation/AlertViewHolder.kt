@@ -14,8 +14,8 @@ class AlertViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         bind.textTitleNotice.text = alertViewState.title
         bind.dateNotice.text = alertViewState.datePublished
         bind.summaryNotice.text = alertViewState.summary
-        view.setOnClickListener{
-            view.context.startActivity(SecondActivity.getIntent(view.context, parseInt(alertViewState.id)))
+        itemView.setOnClickListener{
+            itemView.context.startActivity(AlertDetailsActivity.getIntent(view.context, alertViewState.id))
         }
     }
 }

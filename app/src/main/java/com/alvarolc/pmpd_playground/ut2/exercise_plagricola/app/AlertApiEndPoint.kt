@@ -13,5 +13,5 @@ interface AlertApiEndPoint {
     fun getAlerts(): Call<ApiResponse<List<AlertApiModel>>>
 
     @GET("alerts/{alert_id}")
-    fun getAlert(@Path("alert_id") alert_id: String): Call<ApiResponse<AlertApiModel>>
+    fun getAlert(@Path("alert_id") alert_id: String): Call<ApiResponse<AlertDetailsModel>>
 }

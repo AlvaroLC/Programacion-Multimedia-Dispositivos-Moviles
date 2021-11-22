@@ -4,5 +4,5 @@ package com.alvarolc.pmpd_playground.ut2.exercise_plagricola.app
  */
 interface ApiClient {
     fun getAlerts(): List<AlertApiModel>
-    fun getAlert(alert_id:String):AlertApiModel?
+    fun getAlert(alert_id:String):AlertDetailsModel?
 }
