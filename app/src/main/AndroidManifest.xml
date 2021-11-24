@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
         <activity
+            android:name=".ut3.ex06.presentation.Ut03Ex06Activity"
+            android:exported="true" />
+        <activity
             android:name=".UT2.UiActivity2"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,9 +26,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

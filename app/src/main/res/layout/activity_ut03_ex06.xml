@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UT2.UiActivity2">
-
-    <include layout="@layout/view_elements" />
+    tools:context=".ut3.ex06.presentation.Ut03Ex06Activity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
