@@ -4,4 +4,16 @@
     <string name="table_col1">Columna 1</string>
     <string name="table_col2">Columna 2</string>
     <string name="table_col3">Columna 3</string>
+
+    <string-array name="one_autonomic_community">
+        <item>Andalucia</item>
+        <item>Aragon</item>
+        <item>Castilla y León</item>
+        <item>Castilla La Mancha</item>
+        <item>Galicia</item>
+        <item>Asturias</item>
+        <item>Pais Vasco</item>
+        <item>Cataluña</item>
+    </string-array>
 </resources>
+

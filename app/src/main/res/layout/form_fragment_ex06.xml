@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/label_username"
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:text="Nombre"/>
+        android:text="Nombre"/>
 
     <EditText
         android:id="@+id/user_name"
@@ -23,18 +24,132 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/label_user_lastname"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        android:layout_marginTop="@dimen/space_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:text="Apellidos"/>
+        android:text="Apellidos"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/user_lastname"
+        app:layout_constraintTop_toBottomOf="@+id/label_user_lastname"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:inputType="text"
         tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/list_autonomic_community"
+        app:layout_constraintTop_toBottomOf="@+id/user_lastname"
+        android:layout_marginTop="@dimen/space_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comunidad Autónoma"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/one_autonomic_community"
+        app:layout_constraintTop_toBottomOf="@+id/list_autonomic_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_gender"
+        app:layout_constraintTop_toBottomOf="@+id/one_autonomic_community"
+        android:layout_marginTop="@dimen/space_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/gender_options"
+        app:layout_constraintTop_toBottomOf="@+id/label_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/radio_femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Varón" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_position"
+        app:layout_constraintTop_toBottomOf="@+id/gender_options"
+        android:layout_marginTop="@dimen/space_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posición:"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/option_portero"
+        app:layout_constraintTop_toBottomOf="@+id/label_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Portero"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/option_defensa"
+        app:layout_constraintTop_toBottomOf="@+id/option_portero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Defensa"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/option_mediocentro"
+        app:layout_constraintTop_toBottomOf="@+id/option_defensa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Mediocentro"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/option_delantero"
+        app:layout_constraintTop_toBottomOf="@+id/option_mediocentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Portero"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/option_delantero">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
