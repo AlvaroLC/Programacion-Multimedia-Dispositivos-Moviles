@@ -4,8 +4,7 @@
     <item
         android:id="@+id/fragment_change"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/icon_list_toolbar"
-        android:title="Reemplazar 1" />
+        android:icon="@drawable/icon_list_form_toolbar"/>
 
 
 </menu>

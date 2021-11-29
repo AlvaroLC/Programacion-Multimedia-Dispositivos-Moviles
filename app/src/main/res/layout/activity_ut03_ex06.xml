@@ -6,47 +6,24 @@
     android:layout_height="wrap_content"
      android:layout_width="match_parent">
 
-    <include
-        android:id="@+id/activity_ex06_custom_toolbar"
-        layout="@layout/activity_ex06_custom_toolbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/teal_200"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
 
-<!--
-        <Button
-            android:id="@+id/button_fragment1"
-            android:layout_width="wrap_content"
+
+        <FrameLayout
+            android:id="@+id/actionLoadFragment1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reemplazar 1"
             tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/button_fragment2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/button_fragment1"
-            android:text="Reemplazar 2"
-            tools:ignore="MissingConstraints" />-->
 
-
-
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/actionLoadFragment1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/activity_ex06_custom_toolbar"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/actionLoadFragment2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/actionLoadFragment1"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/actionLoadFragment3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

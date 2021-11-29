@@ -10,20 +10,6 @@
     android:background="@color/teal_200"
     app:titleTextColor="@color/white">
 
-<!--
-    <Button
-        android:id="@+id/button_fragment1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cargar 1"
-        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button_fragment2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/button_fragment1"
-        android:text="Cargar 2"
-        tools:ignore="MissingConstraints" />-->
 
 </androidx.appcompat.widget.Toolbar>
