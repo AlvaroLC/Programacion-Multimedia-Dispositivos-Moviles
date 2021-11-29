@@ -52,56 +52,6 @@ class Ut03Ex06Activity : AppCompatActivity() {
         }
     }
 
-
-/*
-    private fun setupView() {
-
-
-        bindingActivity.buttonFragment1.setOnClickListener{
-            addFragment(bindingActivity.actionLoadFragment1.id, Ut03Ex06FormFragment.createInstance(), "1")
-        }
-        bindingActivity.buttonFragment2.setOnClickListener {
-            addFragment(bindingActivity.actionLoadFragment2.id, Ut03Ex06ListFragment.createInstance(), "2")
-        }
-
-        bindingActivity.buttonFragment1.setOnClickListener {
-            val fragment1 = supportFragmentManager.findFragmentByTag("1")
-            fragment1?.let {
-                replaceFragment(bindingActivity.actionLoadFragment1.id, Ut03Ex06FormFragment.createInstance())
-            }
-
-
-            val fragment2 = supportFragmentManager.findFragmentByTag("2")
-            fragment2?.let {
-                replaceFragment(bindingActivity.actionLoadFragment1.id, Ut03Ex06ListFragment.createInstance())
-            }
-        }
-
-
-        bindingActivity.actionRemoveFragment2.setOnClickListener {
-            val fragment = supportFragmentManager.findFragmentByTag("2")
-            fragment?.let {
-                removeFragment(fragment)
-            }
-        }
-        bindingActivity.buttonFragment1.setOnClickListener {
-            replaceFragment(bindingActivity.actionLoadFragment1.id, Ut03Ex06FormFragment.createInstance())
-        }
-        bindingActivity.buttonFragment2.setOnClickListener {
-            replaceFragment(bindingActivity.actionLoadFragment1.id, Ut03Ex06ListFragment.createInstance())
-        }
-    }
-
-
-
-
-    private fun removeFragment(fragment: Fragment) {
-        val fragmentTransition = supportFragmentManager.beginTransaction()
-        fragmentTransition.remove(fragment)
-        fragmentTransition.addToBackStack(null)
-        fragmentTransition.commit() //aplica los cambios
-    }*/
-
     private fun addFragment(layoutId: Int, fragment: Fragment, tag: String) {
         val fragmentTransition = supportFragmentManager.beginTransaction()
         //Layout ID, Fragment, TAG
