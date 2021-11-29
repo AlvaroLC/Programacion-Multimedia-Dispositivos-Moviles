@@ -21,12 +21,11 @@ class Ut03Ex06Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(bindingActivity.root)
         setupCustomToolbar()
-
+        replaceFragment(bindingActivity.containerFragment.id, Ut03Ex06FormFragment.createInstance())
     }
 
     private fun setupCustomToolbar() {
         setSupportActionBar(bindingActivity.toolbar)
-        replaceFragment(bindingActivity.containerFragment.id, Ut03Ex06FormFragment.createInstance())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
