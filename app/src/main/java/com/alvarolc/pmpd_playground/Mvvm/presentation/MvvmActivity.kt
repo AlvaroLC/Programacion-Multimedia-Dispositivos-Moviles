@@ -13,6 +13,7 @@ class MvvmActivity : AppCompatActivity() {
         setContentView(R.layout.activity_mvvm)
     }
 
+
     private fun render(){
         val mvvmModel = viewModel.getAllMvvm()
     }

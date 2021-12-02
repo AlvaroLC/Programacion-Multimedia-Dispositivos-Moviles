@@ -2,6 +2,7 @@ package com.alvarolc.pmpd_playground.ut3.domain
 
 import com.alvarolc.pmpd_playground.R
 
+
 class TapaModel(val titleRestaurant: Int = R.string.text_title_restaurant,
                 val typeRestaurant: Int = R.string.text_title_type_restaurant,
                 val textRatingNumber : Int = R.string.text_rating_number,

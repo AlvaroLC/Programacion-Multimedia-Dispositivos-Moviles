@@ -17,6 +17,7 @@ class UiActivity : AppCompatActivity() {
     private lateinit var labelTextDiscountNumber : TextView
     private val viewModel = UiViewModel()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_exercise_restaurant1)

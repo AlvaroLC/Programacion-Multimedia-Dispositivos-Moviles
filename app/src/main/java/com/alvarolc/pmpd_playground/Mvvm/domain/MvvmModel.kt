@@ -9,4 +9,5 @@ data class MvvmModel(
     val mvvmDetailsModel: MvvmDetailsModel) {
 }
 
+
 data class MvvmDetailsModel(val longDescription: String, val startDate: Date)

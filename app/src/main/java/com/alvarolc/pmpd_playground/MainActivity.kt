@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("@dev","onCreate")
         setContentView(R.layout.activity_main)
 
+
         //val imageLion : AppCompatImageView = findViewById(R.id.ic_image_lion)
         //imageLion.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_image_lion))
         //imageLion.setImageResource(R.drawable.ic_image_lion)

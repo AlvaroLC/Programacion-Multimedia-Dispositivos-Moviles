@@ -7,4 +7,5 @@ class MvvmViewModel(val getMvvmUseCase: GetMvvmUseCase): ViewModel() {
 
         fun getAllMvvm() = getMvvmUseCase.execute("1")
 
+
 }

@@ -6,4 +6,5 @@ class GetMvvmUseCase(val mvvmRepository: MvvmRepository){
         val model = mvvmRepository.getMvvm()
         return model
     }
+
 }
