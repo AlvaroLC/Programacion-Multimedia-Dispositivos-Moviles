@@ -5,6 +5,16 @@
     <dimen name="space_horizontal">10dp</dimen>
     <dimen name="width_text">300dp</dimen>
 
+    <dimen name="margin_top">28dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_top_separator">5dp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="max_width_separator">380dp</dimen>
+    <dimen name="padding_top">16dp</dimen>
+    <dimen name="icon_width_medium">32dp</dimen>
+    <dimen name="icon_height_medium">32dp</dimen>
+
+
     <dimen name="text_size_title">10sp</dimen>
 
     <dimen name="space_start">5dp</dimen>

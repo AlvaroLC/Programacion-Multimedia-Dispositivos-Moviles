@@ -9,5 +9,4 @@ data class AlertViewState(val id: String,
                           val datePublished: String,
                           val body: String,
                           val source: String,
-                          val files: List<FileModel>
-                         )
+                          val files: List<FileModel>)

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ut2.exercise_plagricola.presentation.AlertDetailsActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/title_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_icon_alert"
+                style="@style/IconSize"
+                android:padding="@dimen/space_vertical"
+                android:src="@drawable/icon_info"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_title_notice"
+                style="@style/titleStyle"
+                android:layout_width="@dimen/width_text"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/image_icon_alert"
+                android:paddingLeft="@dimen/space_vertical"
+                android:paddingTop="@dimen/space_vertical"
+                tools:text="TITULO DE LA NOTICIA" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/files_downloader"
+            style="@style/titlesSection"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/space_vertical"
+            android:paddingTop="@dimen/space_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/title_header"
+            tools:ignore="MissingConstraints"
+            tools:text="Ficheros Descargables" />
+
+        <RelativeLayout
+            android:id="@+id/line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/files_downloader"
+            tools:ignore="MissingConstraints">
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/list_files"
+            app:layout_constraintTop_toBottomOf="@+id/line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/file_title"
+                    android:padding="@dimen/padding_top"
+                    tools:text="file1" />
+
+                <ImageView
+                    android:id="@+id/first_icon_pdf"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/pdf_file_icon" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/file_title2"
+                    android:padding="@dimen/padding_top"
+                    tools:text="Recomendaciones del manejo. Periodo estival \n 2021" />
+
+                <ImageView
+                    android:id="@+id/secon_icon_pdf"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_width="@dimen/icon_width_medium"
+                    android:layout_height="@dimen/icon_height_medium"
+                    android:src="@drawable/pdf_file_icon" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/alert_content"
+            style="@style/titlesSection"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/space_vertical"
+            android:paddingTop="@dimen/space_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/list_files"
+            tools:ignore="MissingConstraints"
+            tools:text="Contenido del aviso" />
+
+        <RelativeLayout
+            android:id="@+id/line_separator1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/alert_content"
+            tools:ignore="MissingConstraints">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/line_separator1"
+            tools:ignore="MissingConstraints"
+            android:layout_margin="25dp">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

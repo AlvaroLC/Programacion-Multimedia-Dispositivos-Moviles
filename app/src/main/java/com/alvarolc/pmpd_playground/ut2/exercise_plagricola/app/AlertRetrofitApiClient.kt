@@ -8,6 +8,7 @@ class AlertRetrofitApiClient : ApiClient {
     private val urlEndPoint: String = "https://plagricola.sitehub.es/api/public/"
     private var apiEndPoint: AlertApiEndPoint
 
+
     init {
         apiEndPoint = buildApiService()
     }
@@ -46,7 +47,7 @@ class AlertRetrofitApiClient : ApiClient {
     }
 
 
-    override fun getAlert(alert_id: String): AlertApiModel? {
+    override fun getAlert(alert_id: String): AlertDetailsModel? {
         val call = apiEndPoint.getAlert(alert_id)
         val response = call.execute()
         return if (response.isSuccessful) {
