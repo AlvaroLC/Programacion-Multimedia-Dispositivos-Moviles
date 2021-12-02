@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="@dimen/space_horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_soul_kitchen"
+            style="@style/AvatarViewBig"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_title_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:paddingStart="@dimen/space_start"
+            tools:text="SOUL KITCHEN" />
+
+        <TextView
+            android:id="@+id/text_type_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title_restaurant"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:paddingStart="@dimen/space_start"
+            tools:text="Cocina Moderna / Hamburgueseria" />
+
+        <RelativeLayout
+            android:id="@+id/rating_options_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_type_restaurant"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen">
+
+            <TextView
+                android:id="@+id/text_rating_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/space_start"
+                tools:text="3.89" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/text_rating_number"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="@dimen/space_start_rating_bar"
+                android:rating="2.5"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/text_view_opinions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/rating_bar"
+                android:paddingStart="@dimen/space_start"
+                tools:text="(305)" />
+
+            <!-- Moneda disponible -->
+            <TextView
+                android:id="@+id/text_available_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/text_view_opinions"
+                android:paddingStart="@dimen/space_start"
+                tools:text="€€" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_uber_eats"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/image_icon_soul_kitchen"
+            android:padding="@dimen/space_icons"
+            android:src="@drawable/ubereats" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_deliveroo"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/image_icon_uber_eats"
+            android:padding="@dimen/space_icons"
+            android:src="@drawable/deliveroo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_glovo"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/image_icon_deliveroo"
+            android:padding="@dimen/space_icons"
+            android:src="@drawable/glovo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_just_eat"
+            style="@style/AvatarViewIcon"
+            android:layout_below="@id/rating_options_view"
+            android:layout_toEndOf="@id/image_icon_glovo"
+            android:padding="@dimen/space_icons"
+            android:src="@drawable/justeat" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_options_view"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/text_discount_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                tools:text="50%" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_discount_tag"
+                style="@style/Icon"
+                android:layout_toEndOf="@id/text_discount_number"
+                android:src="@drawable/etiqueta" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
