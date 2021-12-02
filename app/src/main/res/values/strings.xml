@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PMPD-PlayGround</string>
+    <string name="name_image">Nombre de la imagen</string>
+    <string name="text_title_restaurant">SOUL KITCHEN</string>
+    <string name="text_title_type_restaurant">Cocina Moderna / Hamburgueseria</string>
+    <string name="text_rating_number">3.89</string>
+    <string name="text_view_opinions">(305)</string>
+    <string name="text_available_currency">€€</string>
+    <string name="text_discount_number">50%</string>
+
 </resources>

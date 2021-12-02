@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/nav_bar_application"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bar_height"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/space_icons"
+            android:src="@drawable/burguer_menu_button" />
+
+        <TextView
+            android:id="@+id/text_title_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/image_button_menu"
+            tools:text="DELIVERUM" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_below="@id/nav_bar_application"
+        android:background="@drawable/hamburguesa3"
+        android:padding="@dimen/header_padding">
+
+        <TextView
+            android:id="@+id/text_title_restaurant"
+            style="@style/TitleStyleRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="SOUL KITCHEN | ÁVILA" />
+
+        <TextView
+            android:id="@+id/text_type_restaurant"
+            style="@style/TypeStyleRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_restaurant"
+            tools:text="Cocina Moderna | Hamburgueseria" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_type_restaurant"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:paddingTop="@dimen/space_start"
+            android:rating="2.5"
+            android:stepSize="0.1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_like_view"
+            style="@style/Icon"
+            android:layout_below="@+id/text_type_restaurant"
+            android:layout_toEndOf="@+id/rating_bar"
+            android:paddingStart="@dimen/space_start"
+            android:src="@drawable/like" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/options_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_view"
+        android:padding="@dimen/options_padding">
+
+        <TextView
+            android:id="@+id/text_option_carta"
+            style="@style/OptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:paddingStart="@dimen/option_padding_start"
+            tools:text="CARTA" />
+
+        <TextView
+            android:id="@+id/text_option_info"
+            style="@style/OptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_option_carta"
+            android:paddingStart="@dimen/option_padding_start"
+            tools:text="INFO" />
+
+        <TextView
+            android:id="@+id/text_option_fotos"
+            style="@style/OptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_option_info"
+            android:paddingStart="@dimen/option_padding_start"
+            tools:text="FOTOS" />
+
+        <TextView
+            android:id="@+id/text_option_opinions"
+            style="@style/OptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="@dimen/option_padding_end"
+            tools:text="OPINIONES (405)" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
