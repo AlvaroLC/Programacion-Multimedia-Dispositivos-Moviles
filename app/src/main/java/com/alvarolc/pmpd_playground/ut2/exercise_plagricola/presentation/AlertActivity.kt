@@ -10,7 +10,6 @@ import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.data.AlertDataReposi
 import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.data.AlertRemoteSource
 import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain.GetAlertsUseCase
 
-
 class AlertActivity : AppCompatActivity() {
 
     private val viewModel =

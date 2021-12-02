@@ -6,7 +6,5 @@ import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain.GetAlertIdUse
 import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain.GetAlertsUseCase
 
 class AlertDetailsViewModel(private val useCase: GetAlertIdUseCase): ViewModel() {
-
     fun getAlertById(alertId: String) = useCase.execute(alertId)
-
 }

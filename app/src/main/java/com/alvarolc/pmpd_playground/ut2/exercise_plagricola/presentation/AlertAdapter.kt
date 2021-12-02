@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.alvarolc.pmpd_playground.R
 
+
 class AlertAdapter : RecyclerView.Adapter<AlertViewHolder>() {
     private val dataSet : MutableList<AlertViewState> = mutableListOf()
 

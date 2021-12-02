@@ -3,6 +3,7 @@ package com.alvarolc.pmpd_playground.ut2.exercise_plagricola.app
 import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain.AlertModel
 import com.alvarolc.pmpd_playground.ut2.exercise_plagricola.domain.FileModel
 
+
 data class AlertApiModel(
     private val alert_id: String,
     private val title: String,

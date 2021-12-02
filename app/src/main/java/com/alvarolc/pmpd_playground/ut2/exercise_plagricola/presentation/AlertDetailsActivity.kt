@@ -71,5 +71,4 @@ class AlertDetailsActivity : AppCompatActivity() {
         }
 
     }
-
 }

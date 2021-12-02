@@ -8,6 +8,7 @@ class AlertRetrofitApiClient : ApiClient {
     private val urlEndPoint: String = "https://plagricola.sitehub.es/api/public/"
     private var apiEndPoint: AlertApiEndPoint
 
+
     init {
         apiEndPoint = buildApiService()
     }

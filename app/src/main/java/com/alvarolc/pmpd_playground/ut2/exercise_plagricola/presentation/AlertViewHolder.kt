@@ -7,7 +7,6 @@ import com.alvarolc.pmpd_playground.databinding.ViewItemAlertBinding
 import java.lang.Integer.parseInt
 
 class AlertViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
-
     private val bind = ViewItemAlertBinding.bind(view)
 
     fun render(alertViewState: AlertViewState){
