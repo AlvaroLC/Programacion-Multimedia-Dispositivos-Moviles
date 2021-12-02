@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="space_vertical">8dp</dimen>
+    <dimen name="space_horizontal">10dp</dimen>
+    <dimen name="width_text">300dp</dimen>
+
     <dimen name="text_size_title">10sp</dimen>
 
     <dimen name="space_start">5dp</dimen>
@@ -20,5 +25,4 @@
 
     <dimen name="option_padding_end">20dp</dimen>
 
-    <dimen name="space_horizontal">10dp</dimen>
 </resources>

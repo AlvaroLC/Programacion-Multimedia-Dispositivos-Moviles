@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_horizontal"
+    card_view:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ut2.exercise_plagricola.presentation.AlertActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_alert"
+            style="@style/IconSize"
+            android:padding="@dimen/space_vertical"
+            android:src="@drawable/icon_info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/titleStyle"
+            android:id="@+id/text_title_notice"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_vertical"
+            android:paddingLeft="@dimen/space_vertical"
+            app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TITULO DE LA NOTICIA" />
+
+        <TextView
+            android:paddingLeft="@dimen/space_vertical"
+            android:paddingTop="@dimen/space_horizontal"
+            android:paddingBottom="@dimen/space_horizontal"
+            android:id="@+id/date_notice"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_notice"
+            tools:text="fecha de la noticia" />
+
+        <TextView
+            android:paddingLeft="@dimen/space_vertical"
+            android:paddingBottom="@dimen/space_vertical"
+            android:id="@+id/summary_notice"
+            android:layout_width="@dimen/width_text"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/image_icon_alert"
+            app:layout_constraintTop_toBottomOf="@+id/date_notice"
+            tools:text="CUERPO DE LA NOTICIA" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alvarolc.pmpd_playground">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMPDPlayGround">
         <activity
-            android:name=".ut3.UiActivity"
+            android:name=".ut2.exercise_plagricola.presentation.SecondActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ut2.ut02_ex02.presentation.Ut02Ex02Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ut2.exercise_plagricola.presentation.AlertActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
