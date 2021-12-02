@@ -8,11 +8,20 @@ import android.view.ViewGroup
 import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import com.alvarolc.pmpd_playground.databinding.FormFragmentEx06Binding
+import com.alvarolc.pmpd_playground.ut3.ex06.data.PlayerDataRepository
+import com.alvarolc.pmpd_playground.ut3.ex06.domain.GetPlayerUseCase
 
 class Ut03Ex06FormFragment : Fragment() {
 
     private lateinit var binding: FormFragmentEx06Binding
 
+    /*private val playerModel: Ut03Ex06FormViewModel = Ut03Ex06FormViewModel(
+        GetPlayerUseCase(
+            PlayerDataRepository(
+                AlertRemoteSource(RetrofitApiClient())
+            )
+        )
+    )*/
 
     override fun onCreateView(
         inflater: LayoutInflater,

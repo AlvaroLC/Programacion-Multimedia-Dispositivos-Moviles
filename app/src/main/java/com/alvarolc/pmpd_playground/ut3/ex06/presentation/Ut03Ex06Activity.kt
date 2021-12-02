@@ -21,7 +21,12 @@ class Ut03Ex06Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(bindingActivity.root)
         setupCustomToolbar()
+        loadFragment()
+    }
+
+    private fun loadFragment(){
         replaceFragment(bindingActivity.containerFragment.id, Ut03Ex06FormFragment.createInstance())
+        supportActionBar?.title = getString(R.string.title_form)
     }
 
     private fun setupCustomToolbar() {

@@ -2,5 +2,7 @@
 <resources>
     <dimen name="margin">16dp</dimen>
     <dimen name="marginTop">70dp</dimen>
-    <dimen name="space_horizontal">20dp</dimen>
+    <dimen name="space_vertical">8dp</dimen>
+    <dimen name="space_horizontal">8dp</dimen>
+    <dimen name="width_text">300dp</dimen>
 </resources>
