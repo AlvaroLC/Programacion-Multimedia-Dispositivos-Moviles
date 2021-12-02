@@ -9,5 +9,5 @@ class AlertRemoteSource(private val apiClient: ApiClient){
     }
 
     fun getAlert(alert_id: String): AlertModel? =
-        apiClient.getAlert(alert_id)?.toAlertModel()
+        apiClient.getAlert(alert_id)?.toModel()
 }
