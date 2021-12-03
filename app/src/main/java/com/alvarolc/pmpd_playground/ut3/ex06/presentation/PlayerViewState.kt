@@ -4,5 +4,5 @@ data class PlayerViewState(val name: String,
                           val surname: String,
                           val comunity: String,
                           val gender: String,
-                          val position: String
+                          val position: List<String>
 )

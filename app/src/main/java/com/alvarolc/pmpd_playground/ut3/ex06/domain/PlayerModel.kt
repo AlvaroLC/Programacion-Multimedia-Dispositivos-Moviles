@@ -5,5 +5,5 @@ data class PlayerModel(
     val surname: String,
     val comunity: String,
     val gender: String,
-    val position: String
+    val position: List<String>
 )

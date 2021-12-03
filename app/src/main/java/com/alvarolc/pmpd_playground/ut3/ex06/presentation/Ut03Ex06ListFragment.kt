@@ -5,13 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.alvarolc.pmpd_playground.R
+import com.alvarolc.pmpd_playground.commons.GsonSerializer
 import com.alvarolc.pmpd_playground.databinding.ListFragmentEx06Binding
-import com.alvarolc.pmpd_playground.ut3.ex06.app.MockApiClient
 import com.alvarolc.pmpd_playground.ut3.ex06.data.PlayerDataRepository
-import com.alvarolc.pmpd_playground.ut3.ex06.data.PlayerRemoteSource
+import com.alvarolc.pmpd_playground.ut3.ex06.data.PlayerFileLocalSource
 import com.alvarolc.pmpd_playground.ut3.ex06.domain.GetPlayerUseCase
+import com.google.gson.Gson
 
 class Ut03Ex06ListFragment : Fragment() {
 
@@ -26,38 +27,39 @@ class Ut03Ex06ListFragment : Fragment() {
         return binding.root
     }
 
-    private val viewModel =
-        Ut03Ex06ListViewModel(GetPlayerUseCase(PlayerDataRepository(PlayerRemoteSource(MockApiClient()))))
+    private val ut03Ex06ListViewModel: Ut03Ex06ListViewModel by lazy {
+        Ut03Ex06ListViewModel(
+            GetPlayerUseCase(
+                PlayerDataRepository(
+                    PlayerFileLocalSource(requireContext(), GsonSerializer(Gson()))
+                )
+            )
+        )
+    }
 
     private val playerAdapter = PlayerAdapter()
     private val bind: ListFragmentEx06Binding by lazy {
         ListFragmentEx06Binding.inflate(layoutInflater)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setupView()
-        exampleInflateView()
-        exampleRecyclerView()
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupViewRecycler()
+        setupViewStateObservers()
+        ut03Ex06ListViewModel.loadPlayers()
     }
 
-    private fun setupView() {
-        bind.listUsers.adapter = playerAdapter
-        bind.listUsers.layoutManager =
-            LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
+    private fun setupViewRecycler() {
+        binding.listUsers.adapter = playerAdapter
+        binding.listUsers.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun exampleInflateView() {
-        val view = layoutInflater.inflate(R.layout.list_fragment_ex06, bind.root, false)
-        bind.wrapContent.addView(view)
-    }
-
-    private fun exampleRecyclerView() {
-        Thread(Runnable {
-            val alerts = viewModel.getPlayers()
-            playerAdapter.setItems(alerts)
-        }).start()
+    private fun setupViewStateObservers() {
+        val playerObserver = Observer<List<PlayerViewState>> {
+            playerAdapter.setItems(it)
+        }
+        ut03Ex06ListViewModel.playerViewState.observe(requireActivity(), playerObserver)
     }
 
     companion object {

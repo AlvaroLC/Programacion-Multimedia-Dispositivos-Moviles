@@ -7,14 +7,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.alvarolc.pmpd_playground.R
 
 class PlayerAdapter : RecyclerView.Adapter<PlayerViewHolder>() {
-    private val dataSet : MutableList<PlayerViewState> = mutableListOf()
+    private val dataSet = mutableListOf<PlayerViewState>()
 
     fun setItems(items: List<PlayerViewState>){
         dataSet.clear()
-        addItems(items)
+        addItems(items.toMutableList())
     }
 
-    fun addItems(items: List<PlayerViewState>){
+    private fun addItems(items: MutableList<PlayerViewState>){
         dataSet.addAll(items)
         notifyDataSetChanged()
     }

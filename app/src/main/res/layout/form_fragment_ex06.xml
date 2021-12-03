@@ -76,7 +76,7 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
-            android:id="@+id/radio_masculino"
+            android:id="@+id/radio_femenino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
@@ -84,7 +84,7 @@
             android:text="Mujer" />
 
         <RadioButton
-            android:id="@+id/radio_femenino"
+            android:id="@+id/radio_masculino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -134,7 +134,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:text="Portero"
+        android:text="Delantero"
         tools:ignore="MissingConstraints" />
 
     <RelativeLayout

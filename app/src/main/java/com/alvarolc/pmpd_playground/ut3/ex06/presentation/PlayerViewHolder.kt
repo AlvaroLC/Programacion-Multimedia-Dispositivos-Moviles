@@ -8,10 +8,10 @@ class PlayerViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
 
     private val bind = ViewItemPlayerBinding.bind(view)
 
-    fun render(alertViewState: PlayerViewState){
-        bind.labelPlayerName.text = alertViewState.name
-        bind.comunityPlayer.text = alertViewState.comunity
-        bind.playerGender.text = alertViewState.gender
-        bind.playerPosition.text = alertViewState.position
+    fun render(playerViewState: PlayerViewState){
+        bind.labelPlayerName.text = playerViewState.name +" "+ playerViewState.surname
+        bind.comunityPlayer.text = playerViewState.comunity
+        bind.playerGender.text = playerViewState.gender
+        bind.playerPosition.text = playerViewState.position?.toString()
     }
 }
